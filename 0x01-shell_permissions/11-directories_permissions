@@ -1,3 +1,2 @@
-#!/usr/bin/env bash
-# Adds execute permission to all subdirectories for owner, group, and others
+#!/bin/bash
 chmod +X *
