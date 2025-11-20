@@ -1,3 +1,2 @@
-#!/usr/bin/env bash
-# Sets permissions: owner and group none, others all
+#!/bin/bash
 chmod 007 hello
