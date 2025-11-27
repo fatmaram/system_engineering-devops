@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# A Bash script that displays all running processes in a user-oriented hierarchical format
+# A Bash script that displays all running processes in a user-oriented format with required headers
 
-ps axf -o user,pid,%cpu,%mem,vsz,rss,tty,stat,start,time,command
+ps -eo user=USER,lstart=STARTED,cmd=COMMAND --no-headers | awk '{printf "%s %s %s %s %s %s %s\n", $1, $2, $3, $4, $5, $6, substr($0, index($0,$8))}'
