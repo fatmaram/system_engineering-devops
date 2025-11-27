@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# A Bash script that displays a list of all running processes in a user-oriented hierarchical format
+# A Bash script that displays all running processes in a user-oriented hierarchical format
 
-ps -ejH
+ps -axjf
