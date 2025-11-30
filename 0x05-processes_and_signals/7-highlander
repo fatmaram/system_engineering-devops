@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+# This script displays "To infinity and beyond" and handles SIGTERM
+
 trap 'echo "I am invincible!!!"' SIGTERM
 
 while true
