@@ -1,7 +1,10 @@
 #!/usr/bin/env bash
-# Infinite loop that displays a message and handles SIGTERM gracefully.
-trap 'echo "I am invincible!!!"' SIGTERM
+# Highlander
+
+# print I am invincible!!! when receiving a SIGTERM signal
+trap "echo I am invincible!!!" SIGTERM
+
 while true; do
-    echo "To infinity and beyond"
-    sleep 2
-done
+  echo "To infinity and beyond"
+  sleep 2
+done;
